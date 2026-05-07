@@ -380,7 +380,7 @@ input[type='range'] { @apply w-full cursor-pointer accent-violet-600; }
 .dark .badge-success { background: rgba(5,150,105,0.15);  color: #6ee7b7; }
 .dark .badge-violet  { background: rgba(124,58,237,0.15); color: #c4b5fd; }
 
-/* sel: select element (alias for forge-select) */
+/* sel: select element alias */
 .sel {
   @apply px-3 py-2 rounded-xl text-sm font-medium outline-none cursor-pointer transition-all;
   background: var(--bg);

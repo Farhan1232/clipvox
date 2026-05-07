@@ -66,7 +66,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col leading-none">
               <span className={`text-[18px] font-black tracking-tight ${isDark ? 'text-white' : 'text-slate-900'}`}>
-                Media<span className="g-text">Forge</span>
+                Clip<span className="g-text">Vox</span>
               </span>
             </div>
           </Link>
