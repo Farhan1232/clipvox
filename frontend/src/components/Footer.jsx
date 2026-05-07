@@ -55,7 +55,7 @@ export default function Footer() {
                 <Zap size={17} className="text-white" />
               </div>
               <span className={`text-xl font-black tracking-tight ${text}`}>
-                Media<span className="g-text">Forge</span>
+                Clip<span className="g-text">Vox</span>
               </span>
             </Link>
 
