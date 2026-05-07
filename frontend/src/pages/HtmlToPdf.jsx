@@ -231,7 +231,7 @@ export default function HtmlToPdf() {
                                 <CheckCircle2 size={16} className="text-emerald-600 shrink-0 mt-0.5" />
                                 <div className="flex-1">
                                     <p className="text-sm font-semibold text-emerald-700">PDF created!</p>
-                                    <a href={resultUrl} download="mediaforge-html.pdf"
+                                    <a href={resultUrl} download="clipvox-html.pdf"
                                         className="btn btn-file mt-2 text-xs py-2">
                                         <Download size={13} /> Download PDF
                                     </a>

@@ -308,12 +308,12 @@ export default function Home() {
         </section>
       </div>
 
-      {/* ─── Why MediaForge ───────────────────────── */}
+      {/* ─── Why ClipVox ───────────────────────── */}
       <section className={`py-16 px-4 sm:px-6 ${isDark ? 'bg-[#0a0a20]' : 'bg-white'}`}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className={`text-3xl font-black tracking-tight ${isDark ? 'text-white' : 'text-slate-900'}`}>
-              Why <span className="g-text">MediaForge</span>?
+              Why <span className="g-text">ClipVox</span>?
             </h2>
             <p className={`text-sm mt-2 ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
               We fixed every pain point users have with existing tools

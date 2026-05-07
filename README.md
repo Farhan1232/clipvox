@@ -1,4 +1,4 @@
-# MediaForge
+# ClipVox
 
 Free · Fast · Private media toolkit — Image to PDF, Video Compressor, Quality Changer, Add Music.
 

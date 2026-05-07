@@ -210,7 +210,7 @@ export default function VideoWatermarkRemover() {
                 <CheckCircle2 size={16} className="text-emerald-600 shrink-0" />
                 <div>
                   <p className="text-sm font-semibold text-emerald-700">Watermark removed!</p>
-                  <a href={result} download="mediaforge-clean-video.mp4"
+                  <a href={result} download="clipvox-clean-video.mp4"
                     className="btn mt-2 text-xs py-2 text-white rounded-xl"
                     style={{ background: 'linear-gradient(135deg,#059669,#0d9488)' }}>
                     <Download size={13} /> Download Clean Video

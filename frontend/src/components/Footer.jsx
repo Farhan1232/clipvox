@@ -114,7 +114,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className={`pt-6 border-t ${border} flex items-center justify-center`}>
           <p className={`text-xs ${sub}`}>
-            © 2026 MediaForge. All rights reserved. Free forever.
+            © 2026 ClipVox. All rights reserved. Free forever.
           </p>
         </div>
       </div>

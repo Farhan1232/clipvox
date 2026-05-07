@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"mediaforge/handlers"
+	"clipvox/handlers"
 )
 
 func main() {
@@ -53,7 +53,7 @@ func main() {
 		port = "8080"
 	}
 
-	log.Printf("MediaForge backend running on http://localhost:%s", port)
+	log.Printf("ClipVox backend running on http://localhost:%s", port)
 	if err := r.Run(":" + port); err != nil {
 		log.Fatal("Server failed:", err)
 	}

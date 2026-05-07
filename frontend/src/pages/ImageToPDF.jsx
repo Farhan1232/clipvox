@@ -281,7 +281,7 @@ export default function ImageToPDF() {
                 </div>
                 <a
                   href={pdfUrl}
-                  download="mediaforge-output.pdf"
+                  download="clipvox-output.pdf"
                   className="btn-primary w-full justify-center"
                   style={{ background: 'linear-gradient(135deg,#059669,#0d9488)' }}
                 >

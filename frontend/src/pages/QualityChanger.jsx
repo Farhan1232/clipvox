@@ -228,7 +228,7 @@ export default function QualityChanger() {
                   <CheckCircle2 size={16} className="text-emerald-400" />
                   <span className="text-sm font-semibold text-emerald-400">Done! Output: {result.size} MB</span>
                 </div>
-                <a href={result.url} download="mediaforge-quality.mp4"
+                <a href={result.url} download="clipvox-quality.mp4"
                   className="btn-primary w-full justify-center"
                   style={{ background: 'linear-gradient(135deg,#059669,#0d9488)' }}>
                   <span className="flex items-center gap-2"><Download size={16} /> Download Video</span>

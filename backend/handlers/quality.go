@@ -111,7 +111,7 @@ func ChangeQuality(c *gin.Context) {
 		return
 	}
 
-	c.Header("Content-Disposition", "attachment; filename=mediaforge-quality.mp4")
+	c.Header("Content-Disposition", "attachment; filename=clipvox-quality.mp4")
 	c.Header("Content-Type", "video/mp4")
 	c.File(outputPath)
 }

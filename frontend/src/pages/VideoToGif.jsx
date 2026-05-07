@@ -206,7 +206,7 @@ export default function VideoToGif() {
                   <CheckCircle2 size={15} className="text-emerald-400" />
                   <span className="text-sm font-semibold text-emerald-400">GIF ready — {result.size} KB</span>
                 </div>
-                <a href={result.url} download="mediaforge.gif"
+                <a href={result.url} download="clipvox.gif"
                   className="btn w-full justify-center py-2.5 rounded-xl text-white"
                   style={{ background: 'linear-gradient(135deg,#059669,#0d9488)' }}>
                   <Download size={15} /> Download GIF

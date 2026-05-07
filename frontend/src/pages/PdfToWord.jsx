@@ -125,7 +125,7 @@ export default function PdfToWord() {
                 <CheckCircle2 size={16} className="text-emerald-600 shrink-0" />
                 <div>
                   <p className="text-sm font-semibold text-emerald-700">Word file ready!</p>
-                  <a href={result} download="mediaforge-converted.docx"
+                  <a href={result} download="clipvox-converted.docx"
                     className="btn btn-file mt-2 text-xs py-2">
                     <Download size={13} /> Download Word File
                   </a>

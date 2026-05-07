@@ -61,7 +61,7 @@ func Compress(c *gin.Context) {
 		return
 	}
 
-	c.Header("Content-Disposition", "attachment; filename=mediaforge-compressed.mp4")
+	c.Header("Content-Disposition", "attachment; filename=clipvox-compressed.mp4")
 	c.Header("Content-Type", "video/mp4")
 	c.File(outputPath)
 }

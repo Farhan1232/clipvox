@@ -242,7 +242,7 @@ export default function VideoCompressor() {
                   <CheckCircle2 size={16} className="text-emerald-400" />
                   <span className="text-sm font-semibold text-emerald-400">Compressed! Saved {result.saved}%</span>
                 </div>
-                <a href={result.url} download="mediaforge-compressed.mp4" className="btn-primary w-full justify-center"
+                <a href={result.url} download="clipvox-compressed.mp4" className="btn-primary w-full justify-center"
                   style={{ background: 'linear-gradient(135deg,#059669,#0d9488)' }}>
                   <span className="flex items-center gap-2"><Download size={16} /> Download Video</span>
                 </a>

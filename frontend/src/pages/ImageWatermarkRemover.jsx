@@ -244,7 +244,7 @@ export default function ImageWatermarkRemover() {
                             </button>
 
                             {resultUrl && !processing && (
-                                <a href={resultUrl} download="mediaforge-clean.jpg"
+                                <a href={resultUrl} download="clipvox-clean.jpg"
                                     className="btn btn-file w-full justify-center">
                                     <Download size={16} /> Download Clean Image
                                 </a>

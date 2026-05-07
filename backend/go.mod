@@ -1,4 +1,4 @@
-module mediaforge
+module clipvox
 
 go 1.21
 

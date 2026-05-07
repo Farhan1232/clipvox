@@ -91,7 +91,7 @@ export default function ImageEnhancer() {
     canvasRef.current.toBlob(blob => {
       const a = document.createElement('a')
       a.href = URL.createObjectURL(blob)
-      a.download = 'mediaforge-enhanced.jpg'
+      a.download = 'clipvox-enhanced.jpg'
       a.click()
       setDl(false)
     }, 'image/jpeg', 0.97)

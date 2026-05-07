@@ -54,7 +54,7 @@ func PdfToWord(c *gin.Context) {
 		return
 	}
 
-	c.Header("Content-Disposition", "attachment; filename=mediaforge-converted.docx")
+	c.Header("Content-Disposition", "attachment; filename=clipvox-converted.docx")
 	c.Header("Content-Type", "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
 	c.File(outputPath)
 }
@@ -105,7 +105,7 @@ func WordToPdf(c *gin.Context) {
 		return
 	}
 
-	c.Header("Content-Disposition", "attachment; filename=mediaforge-converted.pdf")
+	c.Header("Content-Disposition", "attachment; filename=clipvox-converted.pdf")
 	c.Header("Content-Type", "application/pdf")
 	c.File(outputPath)
 }

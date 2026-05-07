@@ -76,7 +76,7 @@ func VideoToGif(c *gin.Context) {
 		return
 	}
 
-	c.Header("Content-Disposition", "attachment; filename=mediaforge.gif")
+	c.Header("Content-Disposition", "attachment; filename=clipvox.gif")
 	c.Header("Content-Type", "image/gif")
 	c.File(outputPath)
 }
