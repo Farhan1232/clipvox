@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import axios from 'axios'
+import api from '../utils/api'
 import DropZone from '../components/DropZone'
 import { Music2, Film, Download, Settings2, Loader2, CheckCircle2, AlertCircle, Volume2 } from 'lucide-react'
 
@@ -46,7 +46,7 @@ export default function AddMusic() {
     form.append('start_offset', startOffset.toString())
 
     try {
-      const res = await axios.post('/api/addmusic', form, {
+      const res = await api.post('/api/addmusic', form, {
         responseType: 'blob',
         onUploadProgress: e => setProgress(10 + Math.round((e.loaded / e.total) * 40)),
       })

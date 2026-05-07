@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import axios from 'axios'
+import api from '../utils/api'
 import { FileText, Download, Loader2, CheckCircle2, AlertCircle, Info } from 'lucide-react'
 import { useTheme } from '../context/ThemeContext'
 
@@ -26,7 +26,7 @@ export default function WordToPdf() {
         form.append('word', file)
 
         try {
-            const res = await axios.post('/api/word-to-pdf', form, {
+            const res = await api.post('/api/word-to-pdf', form, {
                 responseType: 'blob',
                 onUploadProgress: e => setProgress(15 + Math.round((e.loaded / e.total) * 40)),
             })

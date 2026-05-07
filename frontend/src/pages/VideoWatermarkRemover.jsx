@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import axios from 'axios'
+import api from '../utils/api'
 import { Wand2, Download, Film, Loader2, CheckCircle2, AlertCircle, Info } from 'lucide-react'
 import { useTheme } from '../context/ThemeContext'
 import DropZone from '../components/DropZone'
@@ -31,7 +31,7 @@ export default function VideoWatermarkRemover() {
     form.append('method', method)
 
     try {
-      const res = await axios.post('/api/remove-video-watermark', form, {
+      const res = await api.post('/api/remove-video-watermark', form, {
         responseType: 'blob',
         onUploadProgress: e => setProgress(10 + Math.round((e.loaded / e.total) * 35)),
       })

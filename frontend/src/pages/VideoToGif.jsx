@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import axios from 'axios'
+import api from '../utils/api'
 import { Clapperboard, Download, Settings2, Loader2, CheckCircle2, AlertCircle, Info } from 'lucide-react'
 import { useTheme } from '../context/ThemeContext'
 import DropZone from '../components/DropZone'
@@ -34,7 +34,7 @@ export default function VideoToGif() {
     form.append('loop',     loop ? '0' : '1')
 
     try {
-      const res = await axios.post('/api/gif', form, {
+      const res = await api.post('/api/gif', form, {
         responseType: 'blob',
         onUploadProgress: e => setProgress(10 + Math.round((e.loaded / e.total) * 30)),
       })

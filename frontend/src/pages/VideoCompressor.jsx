@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import axios from 'axios'
+import api from '../utils/api'
 import DropZone from '../components/DropZone'
 import { Film, Download, Settings2, Loader2, CheckCircle2, AlertCircle, Info } from 'lucide-react'
 
@@ -60,7 +60,7 @@ export default function VideoCompressor() {
     form.append('preset', speed)
 
     try {
-      const res = await axios.post('/api/compress', form, {
+      const res = await api.post('/api/compress', form, {
         responseType: 'blob',
         onUploadProgress: e => setProgress(10 + Math.round((e.loaded / e.total) * 30)),
       })

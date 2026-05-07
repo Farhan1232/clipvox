@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import axios from 'axios'
+import api from '../utils/api'
 import DropZone from '../components/DropZone'
 import { Sliders, Download, Settings2, Loader2, CheckCircle2, AlertCircle, Zap } from 'lucide-react'
 
@@ -54,7 +54,7 @@ export default function QualityChanger() {
     if (bitrate) form.append('bitrate', bitrate)
 
     try {
-      const res = await axios.post('/api/quality', form, {
+      const res = await api.post('/api/quality', form, {
         responseType: 'blob',
         onUploadProgress: e => setProgress(10 + Math.round((e.loaded / e.total) * 35)),
       })
